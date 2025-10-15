@@ -1,10 +1,14 @@
 import os
 
-print(os.listdir())
 
-for i in os.listdir():
-    print(i)
+print("Here is the listdir->",os.listdir())
 
+print("Here is current working directory->",os.getcwd())
 
-list1=[c for c in (input("Enter the numer")).split(",")]
-print(list1)
+print("pritining *")
+
+n=int(input("enter the rnage"))
+
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(i,j)
